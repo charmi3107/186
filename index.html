@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>spe particle system components</title>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js">
+</script>
+<script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+<a-scene id="scene">
+    <a-entity id="camera" position="-100 50 15" wasd-controls camera look-controls="pointerLockEnabled:false">
+    </a-entity>
+    <a-sky src="https://www.roamthegnome.com/wp-content/uploads/2021/01/image-disneyland-paris-castle-at-night.jpg.webp" >
+
+    </a-sky>
+    <a-entity position='0 1 0'
+    spe-particles="
+    color:green,yellow,red,purple;
+    distribution:sphere;
+    randomize-velocity:true;
+    radius:1;
+    particle-count:800;
+    velocity:1;
+    velocity-spread:15;
+    drag:1;
+    max-age:2;
+    duration:-1;
+    blending:additive;
+    active-multiplier:1000;
+    size:1,1,1,0"
+    >
+    <a-entity position='10 4 0'
+    spe-particles="
+    color:blue,pink,white,purple;
+    distribution:sphere;
+    randomize-velocity:true;
+    radius:1;
+    particle-count:800;
+    velocity:1;
+    velocity-spread:15;
+    drag:1;
+    max-age:2;
+    duration:-1;
+    blending:additive;
+    active-multiplier:1000;
+    size:1,1,1,0"
+    >
+
+    <a-entity position='-10 8 0'
+    spe-particles="
+    color:blue,pink,white,purple;
+    distribution:sphere;
+    randomize-velocity:true;
+    radius:1;
+    particle-count:800;
+    velocity:1;
+    velocity-spread:15;
+    drag:1;
+    max-age:2;
+    duration:-1;
+    blending:additive;
+    active-multiplier:1000;
+    size:1,1,1,0"
+    >
+    </a-entity>
+    
+   
+    <a-camera position="0 -10 30" ></a-camera>
+</a-scene>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
